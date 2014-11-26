@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Name</key>
+        <array>
+            <string>Network</string>
+            <string>Collection of kexts to fully enable specific Ethernet controllers.</string>
+        </array>
+        <key>Children</key>
+        <array>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>Atheros</string>
+                    <string>Enables Atheros AR8132 Fast Ethernet, AR8131 Gigabit Ethernet, AR8151 v1.0 Gigabit Ethernet, AR8151 v2.0 Gigabit Ethernet, AR8152 v1.1 Fast Ethernet and AR8152 v2.0 Fast Ethernet controllers.</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>ALXEthernet v1.0.2</string>
+                        <string>Shailua's port of the Qualcomm Atheros alx Ethernet Linux driver. Installs ALXEthernet.kext in /System/Library/Extensions.</string>
+                        <string>ALXEthernet-v1.0.2.pkg</string>
+                    </array>
+                    <array>
+                        <string>AtherosL1cEthernet 1.2.3</string>
+                        <string>Shailua's updated version of maolj’s port of the Atheros Linux driver. Adds support for the AR81(31/32/51/52/61/62/71/72). Installs AtherosL1cEthernet.kext in /System/Library/Extension.</string>
+                        <string>AtherosL1cEthernet-v1.2.3.pkg</string>
+                    </array>
+                    <array>
+                        <string>Killer ALXEthernet v1.0.2</string>
+                        <string>gamester3333's version of Shailua's port of the Qualcomm Atheros alx Ethernet Linux driver for the Killer E2200 controller. Installs ALXEthernet.kext in /System/Library/Extensions.</string>
+                        <string>Killer-ALXEthernet-v1.0.2.pkg</string>
+                    </array>
+                    <array>
+                        <string>AtherosE2200Ethernet v1.0.0d7</string>
+                        <string>Mieze’s driver based on Johannes Berg’s alx driver and RealtekRTL811 for the Killer E2200 controller. Installs AtherosE2200Ethernet in /System/Library/Extensions.</string>
+                        <string>AtherosE2200Ethernet-v1.0.0d7.pkg</string>
+                    </array>
+                </array>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>Intel</string>
+                    <string>Enables Intel 825xx ethernet controllers.</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>AppleIntelE1000e v2.4.14</string>
+                        <string>Enables Intel 825xx ethernet controllers. hnak's port of the e1000.sourceforge.net Intel Wired Ethernet for Linux driver. Installs AppleIntelE1000e.kext in /System/Library/Extensions.</string>
+                        <string>AppleIntelE1000e-v2.4.14.pkg</string>
+                    </array>
+                    <array>
+                        <string>AppleIntelE1000e v2.5.4d</string>
+                        <string>Enables Intel 825xx ethernet controllers. hnak's port of the e1000.sourceforge.net Intel Wired Ethernet for Linux driver. Installs AppleIntelE1000e.kext in /System/Library/Extensions.</string>
+                        <string>AppleIntelE1000e-v2.5.4d.pkg</string>
+                    </array>
+                    <array>
+                        <string>AppleIntelE1000e v3.0.4.1a</string>
+                        <string>Enables Intel 825xx ethernet controllers. hnak's port of the e1000.sourceforge.net Intel Wired Ethernet for Linux driver. Installs AppleIntelE1000e.kext in /System/Library/Extensions.</string>
+                        <string>AppleIntelE1000e-v3.0.4.1a.pkg</string>
+                    </array>
+                    <array>
+                        <string>AppleIntelE1000e v3.1.0</string>
+                        <string>Enables Intel 825xx ethernet controllers. hnak's port of the e1000.sourceforge.net Intel Wired Ethernet for Linux driver. Installs AppleIntelE1000e.kext in /System/Library/Extensions.</string>
+                        <string>AppleIntelE1000e-v3.1.0.pkg</string>
+                    </array>
+                    <array>
+                        <string>AppleIGB v5.2.9.4</string>
+                        <string>Enables Intel 82575, 82576, 82580, dh89xxcc, i350, i210 and i211 ethernet controllers. hnak's port of the Intel igb ethernet driver for Linux. Installs AppleIGB.kext in /System/Library/Extensions.</string>
+                        <string>AppleIGB-v5.2.9.4.pkg</string>
+                    </array>
+                </array>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>Realtek</string>
+                    <string>Enables Realtek 81xx Ethernet controllers.</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>RealtekRTL81xx v0.0.90</string>
+                        <string>Lnx2Mac's port of the Linux RTL81xx driver merged into Chuck Fry's "Chucko R1000SL" kext. Installs RealtekRTL81xx.kext in /System/Library/Extensions.</string>
+                        <string>RealtekRTL81xx-0_0_90.pkg</string>
+                    </array>
+                    <array>
+                        <string>RealtekRTL8111 v1.2.2</string>
+                        <string>Mieze's port of the Realtek Linux v8.037.00 driver. Installs RealtekRTL8111.kext in /System/Library/Extensions. Project page: https://github.com/Mieze/RTL8111_driver_for_OS_X</string>
+                        <string>RealtekRTL8111-v1.2.2.pkg</string>
+                    </array>
+                    <array>
+                        <string>AppleRTL8169Ethernet 2.0.6</string>
+                        <string>Enables Realtek 81xx Ethernet controllers. Official Realtek driver for 81xx Ethernet controllers. Installs AppleRTL8169Ethernet.kext in /System/Library/Extensions.</string>
+                        <string>AppleRTL8169Ethernet-v2.0.6.pkg</string>
+                    </array>
+                </array>
+            </dict>
+        </array>
+    </dict>
+</plist>

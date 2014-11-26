@@ -1,0 +1,55 @@
+Scope (_SB.PCI0.LPCB.EC0)
+    {
+        Device (SMCD)
+        {
+            Name (_HID, "MON0000")
+            OperationRegion (ECRM, EmbeddedControl, Zero, 0xFF)
+            Field (ECRM, ByteAcc, Lock, Preserve)
+            {
+                        Offset (0x93),
+                BIOS,   8,
+                FSPD,   8,
+                        Offset (0xA8),
+                CPUD,   8
+            }
+
+            Method (FAN0, 0, Serialized)
+            {
+                Store (FSPD, Local0)
+                If (LEqual (Local0, 0xFF))
+                {
+                    Store (Zero, Local0)
+                }
+
+                If (Local0)
+                {
+                    Add (0x0003C000, ShiftRight (Local0, One), Local1)
+                    Divide (Local1, Local0, , Local0)
+                }
+
+                Return (Local0)
+            }
+
+            Name (FTAB, Buffer (0x24)
+            {
+                /* 0000 */    0x40, 0xB4, 0x41, 0x7D, 0x42, 0x73, 0x43, 0x69,
+                /* 0008 */    0x44, 0x5F, 0x45, 0x55, 0x46, 0x4B, 0x47, 0x41,
+                /* 0010 */    0x48, 0x37, 0x49, 0x2D, 0x4A, 0x23, 0x4B, 0x19,
+                /* 0018 */    0xFF, 0x00
+            })
+            Method (FCPU, 0, Serialized)
+            {
+                Store (0x14, BIOS)
+                Store (CPUD, Local0)
+                Store (Zero, Local2)
+                While (LGreater (Local0, DerefOf (Index (FTAB, Local2))))
+                {
+                    Add (Local2, 0x02, Local2)
+                }
+
+                Increment (Local2)
+                Store (DerefOf (Index (FTAB, Local2)), FSPD)
+                Return (Local0)
+            }
+        }
+    }

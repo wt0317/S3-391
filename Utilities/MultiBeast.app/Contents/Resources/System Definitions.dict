@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Name</key>
+        <array>
+            <string>System Definitions</string>
+            <string>Contains pre-edited smbios.plist files that will identify your system as a specific Mac model. MacPro3,1 is installed by default by EasyBeast, and UserDSDT installations, and is the general recommendation.</string>
+        </array>
+        <key>Children</key>
+        <array>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>Mac Pro</string>
+                    <string>These pre-edited smbios.plist files will identify your system as a Mac Pro. Choose the appropriate model from the sublist.</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>Mac Pro 3,1</string>
+                        <string>This smbios.plist identifies your computer as an MacPro3,1. Installed in /Extra.</string>
+                        <string>MacPro3,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>Mac Pro 4,1</string>
+                        <string>This smbios.plist identifies your computer as an MacPro4,1. Installed in /Extra.</string>
+                        <string>MacPro4,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>Mac Pro 5,1</string>
+                        <string>This smbios.plist identifies your computer as an MacPro5,1. Installed in /Extra.</string>
+                        <string>MacPro5,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>Mac Pro 6,1</string>
+                        <string>This smbios.plist identifies your computer as an MacPro6,1. Installed in /Extra.</string>
+                        <string>MacPro6,1.pkg</string>
+                    </array>
+                </array>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>iMac</string>
+                    <string>These pre-edited smbios.plist files will identify your system as an iMac. Choose the appropriate model from the sublist.</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>iMac 11,1</string>
+                        <string>This smbios.plist identifies your computer as an iMac11,1. Installed in /Extra.</string>
+                        <string>iMac11,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>iMac 11,2</string>
+                        <string>This smbios.plist identifies your computer as an iMac11,2. Installed in /Extra.</string>
+                        <string>iMac11,2.pkg</string>
+                    </array>
+                    <array>
+                        <string>iMac 12,1</string>
+                        <string>This smbios.plist identifies your computer as an iMac12,1. Installed in /Extra.</string>
+                        <string>iMac12,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>iMac 12,2</string>
+                        <string>This smbios.plist identifies your computer as an iMac12,2. Installed in /Extra.</string>
+                        <string>iMac12,2.pkg</string>
+                    </array>
+                    <array>
+                        <string>iMac 13,1</string>
+                        <string>This smbios.plist identifies your computer as an iMac13,1. Installed in /Extra.</string>
+                        <string>iMac13,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>iMac 13,2</string>
+                        <string>This smbios.plist identifies your computer as an iMac13,2. Installed in /Extra.</string>
+                        <string>iMac13,2.pkg</string>
+                    </array>
+                    <array>
+                        <string>iMac 14,1</string>
+                        <string>This smbios.plist identifies your computer as an iMac14,1. Installed in /Extra.</string>
+                        <string>iMac14,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>iMac 14,2</string>
+                        <string>This smbios.plist identifies your computer as an iMac14,2. Installed in /Extra.</string>
+                        <string>iMac14,2.pkg</string>
+                    </array>
+                </array>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>Mac mini</string>
+                    <string>These pre-edited smbios.plist files will identify your system as an Mac mini. Choose the appropriate model from the sublist.</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>Mac mini 5,1</string>
+                        <string>This smbios.plist identifies your computer as an Macmini5,1. Installed in /Extra.</string>
+                        <string>Macmini5,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>Mac mini 6,1</string>
+                        <string>This smbios.plist identifies your computer as an Macmini6,1. Installed in /Extra.</string>
+                        <string>Macmini6,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>Mac mini 6,2</string>
+                        <string>This smbios.plist identifies your computer as an Macmini6,2. Installed in /Extra.</string>
+                        <string>Macmini6,2.pkg</string>
+                    </array>
+                </array>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>MacBook Pro</string>
+                    <string>These pre-edited smbios.plist files will identify your system as a MacBook Pro. Choose the appropriate model from the sublist.</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>MacBook Pro 6,1</string>
+                        <string>This smbios.plist identifies your computer as a MacBookPro 6,1. Installed in /Extra.</string>
+                        <string>MacBookPro6,1.pkg</string>
+                    </array>
+                    <array>
+                        <string>MacBook Pro 8,1</string>
+                        <string>This smbios.plist identifies your computer as a MacBookPro 8,1. Installed in /Extra.</string>
+                        <string>MacBookPro8,1.pkg</string>
+                    </array>
+                </array>
+            </dict>
+        </array>
+    </dict>
+</plist>

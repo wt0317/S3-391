@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Name</key>
+        <array>
+            <string>Audio</string>
+            <string>Collection of kexts to enable the on-board Audio on your system. Make sure to read the descriptions carefully and only install the correct files for your audio codec.</string>
+        </array>
+        <key>Children</key>
+        <array>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>Realtek ALCxxx</string>
+                    <string>Enables audio for motherboards featuring the Realtek ALC887/888b, ALC888, ALC885/889a, ALC889, ALC892, ALC898 or ALC1150 high-definition audio codecs. Click the triangle to expand and then choose the appropriate codec for your environment.</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>ALC887/888b Legacy v100202</string>
+                        <string>Replaces /System/Library/Extensions/AppleHDA.kext with a patched 10.10.0 AppleHDA.kext edited by toleda to enable full functionality for the Realtek ALC887/888b high-definition audio codec. Patches /Extra/DSDT.aml if found to replace the current layout-id with layout-id 1. Adds HDAEnabler=Yes, HDEFLayoutID=01000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>AppleHDA-887_v100202.pkg</string>
+                    </array>
+                    <array>
+                        <string>ALC887/888b Current v100302</string>
+                        <string>Replaces /System/Library/Extensions/AppleHDA.kext with a patched 10.10.0 AppleHDA.kext edited by toleda to enable full functionality for the Realtek ALC887/888b high-definition audio codec. Patches /Extra/DSDT.aml if found to replace the current layout-id with layout-id 1. Adds HDAEnabler=Yes, HDEFLayoutID=01000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>AppleHDA-887_v100302.pkg</string>
+                    </array>
+                    <array>
+                        <string>ALC888 Legacy v100202</string>
+                        <string>Replaces /System/Library/Extensions/AppleHDA.kext with a patched 10.10.0 AppleHDA.kext edited by toleda to enable full functionality for the Realtek ALC888 high-definition audio codec. Patches /Extra/DSDT.aml if found to replace the current layout-id with layout-id 1. Adds HDAEnabler=Yes, HDEFLayoutID=01000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>AppleHDA-888_v100202.pkg</string>
+                    </array>
+                    <array>
+                        <string>ALC888 Current v100302</string>
+                        <string>Replaces /System/Library/Extensions/AppleHDA.kext with a patched 10.10.0 AppleHDA.kext edited by toleda to enable full functionality for the Realtek ALC888 high-definition audio codec. Patches /Extra/DSDT.aml if found to replace the current layout-id with layout-id 1. Adds HDAEnabler=Yes, HDEFLayoutID=01000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>AppleHDA-888_v100302.pkg</string>
+                    </array>
+                    <array>
+                        <string>ALC885/889a</string>
+                        <string>Replaces /System/Library/Extensions/AppleHDA.kext with a patched 10.10.0 AppleHDA.kext edited by toleda to enable full functionality for the Realtek ALC885/889a high-definition audio codec. Patches /Extra/DSDT.aml if found to replace the current layout-id with layout-id 1. Adds HDAEnabler=Yes, HDEFLayoutID=01000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>AppleHDA-885.pkg</string>
+                    </array>
+                    <array>
+                        <string>ALC889</string>
+                        <string>Replaces /System/Library/Extensions/AppleHDA.kext with a patched 10.10.0 AppleHDA.kext edited by toleda to enable full functionality for the Realtek ALC889 high-definition audio codec. Patches /Extra/DSDT.aml if found to replace the current layout-id with layout-id 1. Adds HDAEnabler=Yes, HDEFLayoutID=01000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>AppleHDA-889.pkg</string>
+                    </array>
+                    <array>
+                        <string>ALC892</string>
+                        <string>Replaces /System/Library/Extensions/AppleHDA.kext with a patched 10.10.0 AppleHDA.kext edited by toleda to enable full functionality for the Realtek ALC892 high-definition audio codec. Patches /Extra/DSDT.aml if found to replace the current layout-id with layout-id 1. Adds HDAEnabler=Yes, HDEFLayoutID=01000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>AppleHDA-892.pkg</string>
+                    </array>
+                    <array>
+                        <string>ALC898</string>
+                        <string>Replaces /System/Library/Extensions/AppleHDA.kext with a patched 10.10.0 AppleHDA.kext edited by toleda to enable full functionality for the Realtek ALC898 high-definition audio codec. Patches /Extra/DSDT.aml if found to replace the current layout-id with layout-id 1. Adds HDAEnabler=Yes, HDEFLayoutID=01000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>AppleHDA-898.pkg</string>
+                    </array>
+                    <array>
+                        <string>ALC1150</string>
+                        <string>Replaces /System/Library/Extensions/AppleHDA.kext with a patched 10.10.0 AppleHDA.kext edited by toleda to enable full functionality for the Realtek ALC1150 high-definition audio codec. Patches /Extra/DSDT.aml if found to replace the current layout-id with layout-id 1. Adds HDAEnabler=Yes, HDEFLayoutID=01000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>AppleHDA-1150.pkg</string>
+                    </array>
+                    <array>
+                        <string>Optional 3 Port (5.1) Audio</string>
+                        <string>Optional for 3 port audio layouts. Remaps audio input and output ports for 5.1 analog support. Writes HDEFLayoutID=02000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>HDEFLayoutID-2-Chameleon</string>
+                    </array>
+                    <array>
+                        <string>Optional HD3000/HD4000 HDMI Audio</string>
+                        <string>Enables HDMI audio on HD 3000/4000 with limited analog output options. Writes HDEFLayoutID=03000000 to /Extra/org.chameleon.Boot.plist.</string>
+                        <string>HDEFLayoutID-3-Chameleon</string>
+                    </array>
+                    <array>
+                        <string>Optional EFI Installed Bootloader Support</string>
+                        <string>Allows installation of patched AppleHDA without checking for required files. Does not edit /Extra/org.chameleon.Boot.plist.</string>
+                        <string>nil</string>
+                    </array>
+                </array>
+            </dict>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>Universal</string>
+                    <string>Enables audio for most codecs. Uses VoodooHDA which is an open source audio driver for devices compliant with the Intel High Definition Audio (HDA) specification, based primarily on code from the FreeBSD hdac driver. It is intended as an Intel-only replacement for AppleHDA. Enables sound without DSDT patching. Click the triangle to expand and then choose the appropriate version.</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>VoodooHDA v0.2.1</string>
+                        <string>VoodooLabs branches. Installs VoodooHDA.kext v0.2.1 in /System/Library/Extensions.</string>
+                        <string>VoodooHDA-v0.2.1.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooHDA v0.2.2</string>
+                        <string>VoodooLabs branches. Installs VoodooHDA.kext v0.2.2 in /System/Library/Extensions.</string>
+                        <string>VoodooHDA-v0.2.2.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooHDA v0.2.56</string>
+                        <string>Installs the Project OS X branch of VoodooHDA.kext v0.2.56 in /System/Library/Extensions and VoodooHDA.prefPane in /System/Library/PreferencePanes.</string>
+                        <string>VoodooHDA-v0.2.56.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooHDA v0.2.61</string>
+                        <string>Installs the Project OS X branch of VoodooHDA.kext v0.2.61 in /System/Library/Extensions and VoodooHDA.prefPane in /System/Library/PreferencePanes.</string>
+                        <string>VoodooHDA-v0.2.61.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooHDA v2.7.2</string>
+                        <string>Installs the Project OS X branch of VoodooHDA.kext v2.7.2 in /System/Library/Extensions and VoodooHDA.prefPane in /System/Library/PreferencePanes.</string>
+                        <string>VoodooHDA-v2.7.2.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooHDA v2.7.2 for VT2021</string>
+                        <string>Project OS X branch version 2.7.2 edited by lazybon3 specifically for the VIA VT2021.</string>
+                        <string>VoodooHDA-v2.7.2-VT2021.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooHDA v2.7.3</string>
+                        <string>Installs the Project OS X branch of VoodooHDA.kext v2.7.3 in /System/Library/Extensions and VoodooHDA.prefPane in /System/Library/PreferencePanes.</string>
+                        <string>VoodooHDA-v2.7.3.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooHDA v2.8.2</string>
+                        <string>Installs the Project OS X branch of VoodooHDA.kext v2.8.2 in /System/Library/Extensions, VoodooHDA.prefPane in /System/Library/PreferencePanes, VoodooHdaSettingsLoader.app in /Applications and getdump in /usr/local/bin.</string>
+                        <string>VoodooHDA-v2.8.2.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooHDA v2.8.4</string>
+                        <string>Installs the Project OS X branch of VoodooHDA.kext v2.8.4 in /System/Library/Extensions, VoodooHDA.prefPane in /System/Library/PreferencePanes, VoodooHdaSettingsLoader.app in /Applications and getdump in /usr/local/bin.</string>
+                        <string>VoodooHDA-v2.8.4.pkg</string>
+                    </array>
+                </array>
+            </dict>
+        </array>
+    </dict>
+</plist>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DSDTFree</key>
+	<string>DSDT Free pre-configured choices: 
+
+Drivers -> Disk -> 3rd Party SATA
+Drivers -> Misc -> FakeSMC v6.11.1328
+Bootloaders -> Chimera v4.0.1
+Customize -> Boot Options -> Basic Boot Options
+Customize -> Boot Options -> Generate CPU States
+Customize -> Boot Options -> Hibernate Mode - Desktop
+Customize -> Boot Options -> Use KernelCache
+Customize -> Boot Options -> Kext Dev Mode
+Customize -> System Definition -> Mac Pro -> Mac Pro 3,1
+Customize -> Themes -> tonymacx86 Black
+
+When viewing options, those that are chosen and grayed out are required and can not be deselected. Any other configured choice may be changed.</string>
+	<key>EasyBeast</key>
+    <string>EasyBeast pre-configured choices:
+        
+Drivers -> Disk -> 3rd Party SATA
+Drivers -> Misc -> EvOreboot
+Drivers -> Misc -> FakeSMC v6.11.1328
+Drivers -> Misc -> NullCPUPowerManagement
+Bootloaders -> Chimera v4.0.1
+Customize -> Boot Options -> Basic Boot Options
+Customize -> Boot Options -> Use KernelCache
+Customize -> Boot Options -> Kext Dev Mode
+Customize -> System Definition -> Mac Pro -> Mac Pro 3,1
+Customize -> Themes -> tonymacx86 Black
+
+When viewing options, those that are chosen and grayed out are required and can not be deselected. Any other configured choice may be changed.</string>
+	<key>NoSelection</key>
+	<string>Quick Start will load a pre-built configuration based on which option is chosen.
+	
+EasyBeast is for Core 2, Core i or Xeon systems with no native CPU Power Management.
+	
+UserDSDT is for those desktop systems who have a pre-edited DSDT for their motherboard.
+	
+DSDT Free is for those desktop systems who have a motherboard that works without a DSDT.
+	
+If you don't want to use any of these pre-built options, you can build you own by selecting a bootloader, theme and kexts.
+	</string>
+	<key>UserDSDT</key>
+	<string>UserDSDT pre-configured choices: 
+
+Drivers -> Disk -> 3rd Party SATA
+Drivers -> Misc -> FakeSMC v6.11.1328
+Bootloaders -> Chimera v4.0.1
+Customize -> Boot Options -> Basic Boot Options
+Customize -> Boot Options -> Generate CPU States
+Customize -> Boot Options -> Hibernate Mode - Desktop
+Customize -> Boot Options -> Use KernelCache
+Customize -> Boot Options -> Kext Dev Mode
+Customize -> System Definition -> Mac Pro -> Mac Pro 3,1
+Customize -> Themes -> tonymacx86 Black
+
+When viewing options, those that are chosen and grayed out are required and can not be deselected. Any other configured choice may be changed.</string>
+</dict>
+</plist>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Name</key>
+        <array>
+            <string>Misc</string>
+            <string>Collection of miscellaneous kexts that provide enhanced hardware support or mandatory for systems not using a DSDT. EasyBeast and UserDSDT already installs all of the mandatory kexts. Be sure to read the descriptions carefully before installation.</string>
+        </array>
+        <key>Children</key>
+        <array>
+            <array>
+                <string>ElliottForceLegacyRTC</string>
+                <string>Prevents a CMOS reset on reboot without a DSDT. Installs ElliottForceLegacyRTC.kext in /System/Library/Extensions.</string>
+                <string>ElliottForceLegacyRTC.pkg</string>
+            </array>
+            <array>
+                <string>EvOreboot</string>
+                <string>If you don't have a DSDT, shutdown and reboot do not work without this kext. Installs EvOreboot.kext in /System/Library/Extensions.</string>
+                <string>EvOreboot.pkg</string>
+            </array>
+            <array>
+                <string>FakeSMC v6.11.1328</string>
+                <string>FakeSMC.kext is the only absolutely mandatory kext, and is required for booting the system. Original by netkas, new branch by kozlek. Installs FakeSMC.kext in /System/Library/Extensions/.</string>
+                <string>FakeSMC-v6.11.1328.pkg</string>
+            </array>
+            <array>
+                <string>FakeSMC v6.11.1328 Plugins</string>
+                <string>Installs FakeSMC plugins ACPISensors.kext, CPUSensors.kext, GPUSensors.kext and LPCSensors.kext in /System/Library/Extensions/FakeSMC.kext/Contents/PlugIns. These plugins allow software access to motherboard hardware monitors.</string>
+                <string>FakeSMC-v6.11.1328-Plugins.pkg</string>
+            </array>
+            <array>
+                <string>FakeSMC v6.11.1328 HWMonitor Application</string>
+                <string>Hardware Monitoring application from kozlek's branch. Requires FakeSMC Motherboard Plugins. Installs /Applications/HWMonitor.app.</string>
+                <string>FakeSMC-v6.11.1328-HWMonitor.pkg</string>
+            </array>
+            <array>
+                <string>NullCPUPowerManagement</string>
+                <string>Disables AppleIntelCPUPowerManagement.kext to prevent kernel panic without proper HPET DSDT edits. Installs NullCPUPowerManagement.kext in /System/Library/Extensions.</string>
+                <string>NullCPUPowerManagement.pkg</string>
+            </array>
+            <array>
+                <string>PS/2 Keyboard/Mice and Trackpads</string>
+                <string>Enables non-USB keyboards, mice and trackpads. Installs Rehabman's branch of VoodooPS2Controller.kext in /System/Library/Extensions.</string>
+                <string>PS2-Keyboard-Mouse.pkg</string>
+            </array>
+            <array>
+                <string>USB 3.0 - Universal</string>
+                <string>Zenith432's GenericUSBXHCI.kext to enable USB 3.0. Installs GenericUSBXHCI.kext in /System/Library/Extensions/ and xhcdump in /usr/local/bin. Also enables USB 2.0 on LGA 1156 motherboards that aren't using a DSDT and don't enable Rate Matching Hub in BIOS.</string>
+                <string>GenericUSBXHCI-v1.2.7.pkg</string>
+            </array>
+            <dict>
+                <key>Name</key>
+                <array>
+                    <string>VoodooTSCSync</string>
+                    <string>VoodooTSCSync.kext synchronizes the Timer Stamp Counter (TSC) on x86/Intel®64 CPUs. Only necessary for LGA2011 CPUs. Written by Cosmosis Jones with source available at http://forge.voodooprojects.org/p/voodootscsync</string>
+                </array>
+                <key>Children</key>
+                <array>
+                    <array>
+                        <string>VoodooTSCSync 4 Core</string>
+                        <string>Pre-edited VoodooTSCSync.kext for 4 core CPUs.</string>
+                        <string>VoodooTSCSync-4.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooTSCSync 6 Core</string>
+                        <string>Pre-edited VoodooTSCSync.kext for 6 core CPUs.</string>
+                        <string>VoodooTSCSync-6.pkg</string>
+                    </array>
+                    <array>
+                        <string>VoodooTSCSync 8 Core</string>
+                        <string>Pre-edited VoodooTSCSync.kext for 8 core CPUs.</string>
+                        <string>VoodooTSCSync-8.pkg</string>
+                    </array>
+                </array>
+            </dict>
+        </array>
+    </dict>
+</plist>

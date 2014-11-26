@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Name</key>
+        <array>
+            <string>Graphics</string>
+            <string>Collection of patches to fully enable graphics capabilities.</string>
+        </array>
+        <key>Children</key>
+        <array>
+            <array>
+                <string>Intel Graphics Patch for Mixed Configurations</string>
+                <string>Patches AppleIntelSNBGraphicsFB.kext and AppleIntelFramebufferCapri.kext to enable the use of the HD 3000 GPU on 7-Series motherboards and the HD 4000 GPU on 6-Series motherboards.</string>
+                <string>Intel-HD-Patch-ML</string>
+            </array>
+        </array>
+    </dict>
+</plist>
