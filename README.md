@@ -30,6 +30,7 @@ Custom SSDT
 1. Add ```<key>DropSSDT</key><string>Yes</string>``` to /Extra/org.chameleon.Boot.plist
 
 Note for actual patch:
+
 1. Reboot with final SMBIOS before proceeding
 1. Open ./Utilities/ProBook Installer
 1. Select only SSDT option and continue install 
@@ -43,6 +44,7 @@ Audio
 1. Rebuild kext (wi-fi first)
 
 Note for actual patch:
+
 1. Find ```0102 0400 1007 0000 1007 0000
 0503 0000 0200 0000 3000 0000
 0205 0000 0004 0000 0700 0000
@@ -75,6 +77,7 @@ DSDT
 1. Copy ./Extra/DSDT.aml to /Extra/
 
 Note for patches applied:
+
 1. Open ./Utilities/MaciASL
 1. Go to Preferences -> Sources, add http://raw.github.com/RehabMan/Laptop-DSDT-Patch/master
 1. Apply Fix TNOT
